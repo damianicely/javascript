@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id ="description">Please Fill out this Form</p>
+    </header>
+    <main>
+        <form id="survey-form" action="POST">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="eg. John Smith" required>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="eg. john@domain.com" required>
+            <label for="number" id="number-label">How Old Are you? </label>
+            <input type="number" name="number" id="number" min="18" max="140" placeholder="19">
+            <label for="dropdown">Personality:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="aggressive">Aggressive</option>
+                <option value="manaiacal">Manaiacal</option>
+                <option value="brooding">Brooding</option>
+            </select>
+            <div>
+                <p>What is your gender?</p>
+                <label>Male <input type="radio" name="gender" value="male"></label>
+                <label>female <input type="radio" name="gender" value="female"></label>
+                <label>Hexadecimal <input type="radio" name="gender" value="Hexadecimal"></label>
+                <label>Greek <input type="radio" name="gender" value="Greek"></label>
+    
+            </div>
+            <div>
+                <p>Do you like:?</p>
+                <label>Male <input type="checkbox" name="like-male" value="y"></label>
+                <label>female <input type="checkbox" name="like-female" value="y"></label>
+                <label>Hexadecimal <input type="checkbox" name="like-hex" value="y"></label>
+                <label>Greek <input type="checkbox" name="like-german" value="y"></label>
+    
+            </div>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything Else to say?"></textarea>
+            <button id="submit">Submit</button>
+
+        </form>
+    </main>
+  </body>
+  
+</html>

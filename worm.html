@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animated Worm</title>
+    <style>
+        .worm{
+            position:relative;
+            margin:auto;
+            top:500px;
+            height: 50px;
+            width: 80px;
+            background-color: rgb(156, 44, 63);
+            margin: auto;
+            border: solid black 2px;
+        }
+        .worm:hover{
+            animation: wiggle3 1000ms 4;
+            z-index:2;
+        }
+        .worm::before{
+            background-color: pink;
+            content:"";
+            position: absolute;
+            height: 50px;
+            width: 200px;
+            top: -14px;
+            left: -180px;
+            border: solid black 1px;
+            border-radius: 30px;
+            z-index: -1;
+            transform: rotate(10deg);
+        }
+        .worm:hover::before{
+            animation: wiggle 1000ms 4;
+            z-index: -1;
+        }
+        .worm::after{
+            background-color: pink;
+            content:"";
+            position: absolute;
+            height: 50px;
+            width: 200px;
+            top: 14px;
+            left: 60px;
+            border: solid black 1px;
+            border-radius: 30px;
+            z-index: -1;
+            transform: rotate(10deg);
+        }
+        .worm:hover::after{
+            animation: wiggle2 1000ms 4;
+        }
+        @keyframes wiggle {
+            50% {
+                transform: rotate(-10deg);
+                top: 14px;
+            }
+            100% {
+                top: -14px;
+                transform: rotate(10deg);
+            }
+        }
+        @keyframes wiggle2 {
+            50% {
+                transform: rotate(-10deg);
+                top: -14px;
+            }
+            100% {
+                top: 14px;
+                transform: rotate(10deg);
+            }
+        }
+        @keyframes wiggle3 {
+            50% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(-5deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="worm"></div>
+</body>
+</html>

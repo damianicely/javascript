@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{box-sizing: border-box;}
+        #header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 200px;
+        }
+        #nav-bar {
+            margin-right: 5vw;
+        }
+        .nav-link {
+            list-style: none;
+        }
+        @media only screen and (min-width:1000px) {
+            .nav-link {
+                display: inline;
+            }
+            
+        }
+        main {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1200px;;
+            justify-content: center;
+            position: absolute;
+            margin: auto;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <img src="https://cdn05.zipify.com/ImcH0rI9ihhaUFQr8YHGw1wjE54=/fit-in/320x0/4d6d50b3405a45a0a7a93817c585eb8c/urbanworm_logo_3x3.jpeg" alt="dyson Logo" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <a href="#features" class="nav-link"><li >Features</li></a>
+                <a href="#how-it-works" class="nav-link"><li>How It Works</li></a>
+                <a href="#pricing" class="nav-link"><li>Pricing</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Possibly the Best Worm Bin Ever!</h1>
+            <p>Continuous flow worm bins allow for worm-free harvests. There is never an emptying of the Urban Worm Bag.
+            </p>
+            <ol>
+                <li>The top layer of the Urban Worm Bag features freshly-added food waste and bedding. Worms tend to stay near these top layers.</li>
+                <li>Decomposition by worms and microbe continues in the middle of the Bag.</li>
+                <li>The bottom of a mature Urban Worm Bag features ready-to-harvest worm castings that will be ready for use in your garden or grow operation. Worms keep working in upper layers so there should not be a need to separate them out.</li>
+            </ol>
+            </section>
+        <section id="features">
+            <h2>Features</h2>
+            <p>an Impressive array of features include:</p>
+            <div id="feature-list">
+                <div id="feature1">
+                    <img src="https://cdn05.zipify.com/cTi_fYVkapKxPkLyfYnkLQUC4Ek=/fit-in/1030x0/ba9d825722bb42949dcddf9deee094ae/buckle_02.jpeg" alt="">
+                    <h3>RELEASE BUCKLE</h3>
+                    <p>Simply release each of the 8 buckles on the bottom of your Urban Worm Bag.</p>
+                </div>
+                <div id="feature2">
+                    <img src="https://cdn05.zipify.com/SQt8zKengOzTpqZIny5wfIDyqCo=/fit-in/1030x0/42c3c7dea0fd46d18688e676d093571a/500px-urban-worm-bag-pullingdownvelcro.jpeg" alt="">
+                    <h3>REMOVE VELCRO</h3>
+                    <p>Simply pull on the bottom of each of the 4 Velcro tabs on the bottom to fully remove the bottom.</p>
+                </div>
+                <div id="feature3">
+                    <img src="https://cdn05.zipify.com/8YazfGKDtbtoJPkjho2tzHDQ0qw=/fit-in/1030x0/e3f9a699c55b4864b3ccb593ec3a62c0/bottomlock.jpeg" alt="">
+                    <h3>LOOSEN THE DRAWSTRING</h3>
+                    <p>This will open up the interior liner. (Don't worry...everything won't fall out!)</p>
+                </div>
+                <div id="feature4">
+                    <img src="https://cdn05.zipify.com/Stdvni2Og_FTfkaQK0ndCrEIV48=/fit-in/900x0/b23322b140da4f03a07b9410f4f31265/velcrobottomdetached.jpeg" alt="">
+                    <h3>USE THE REMOVABLE BOTTOM AS A CATCH</h3>
+                    <p>Remove the patented bottom and place underneath the Urban Worm Bag to begin harvest. Hint....bumping the sides helps to loosen compacted vermicompost!
+                    <br>
+                    Your first harvest may be very wet, maybe a little wormy, and will contain unprocessed bedding. Just send that material back into the top!
+                    <br>
+                    Subsequent harvests will have better texture and should be worm-free.</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <iframe id="video" width="538" height="303" src="https://www.youtube.com/embed/cpETNCJuqMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <p>For a quote please enter your email in the form below.</p>
+            <form action="https://www.freecodecamp.com/email-submit" method="post"  id="form">
+                <input type="email" name="email" id="email" placeholder="eg. john@domain.com" required>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+
+        </section>
+    </main>
+
+</body>
+</html>

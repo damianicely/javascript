@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "main";
+    grid-gap: 15px;
+    background-color: bisque;
+    margin: 0;
+}
+@media (min-width: 825px){
+    body {
+        grid-template-columns: 300px auto;
+        grid-template-areas: 
+            "nav main";
+    }
+}
+#navbar {
+    padding-left: 15px;
+    background-color: blanchedalmond;
+
+    grid-area: nav;
+}
+#navbar li {
+    list-style: none;
+    border-bottom: 2px;
+    margin-bottom: 25px;
+
+}
+#main-doc {
+    padding-left: 15px;
+    background-color: blanchedalmond;
+    grid-area: main;
+}
+
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <header>
+        <h1>Javascript Documentaion</h1>
+    </header>
+    <ul>
+        <a href="#basic_syntax" class="nav-link">
+            <li>Basic Syntax</li>
+        </a>
+        <a href="#regex" class="nav-link">
+            <li>Regex</li>
+        </a>
+        <a href="#data_structures" class="nav-link">
+            <li>Data Structures</li>
+        </a>
+        <a href="#object_oriented" class="nav-link">
+            <li>Object Oriented</li>
+        </a>
+        <a href="#functional" class="nav-link">
+            <li>Functional</li>
+        </a>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section id="basic_syntax" class="main-section">
+        <header><h2>Basic Syntax</h2></header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+        <code>Lorem cool code man</code>
+        <ul>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+    </section>
+    <section id="regex" class="main-section">
+        <header><h2>Regex</h2></header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+        <code>Lorem cool code man</code>
+        <ul>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+    </section>
+    <section id="data_structures" class="main-section">
+        <header><h2>Data Structures</h2></header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+        <code>Lorem cool code man</code>
+        <ul>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+    </section>
+    <section id="object_oriented" class="main-section">
+        <header><h2>Object Oriented</h2></header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+        <code>Lorem cool code man</code>
+        <ul>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+    </section>
+    <section id="functional" class="main-section">
+        <header><h2>Functional</h2></header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+        <code>Lorem cool code man</code>
+        <ul>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+            <li>Strongly Held view!</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti officiis eius quam doloribus recusandae tempora quae veritatis, esse dignissimos nihil voluptate libero omnis! Beatae quod maxime ipsa id quia.</p>
+    </section>
+</main>
+</body>
+</html>
